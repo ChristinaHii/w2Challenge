@@ -1,0 +1,139 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Grid CSS */
+
+#heroGrid {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 75% 25%;
+  grid-template-columns: 75% 25%;
+  grid-template-areas:
+  "brandlogo secondaryProduct"
+  "brandlogo CTA";
+}
+
+#brandlogo {
+  grid-area: brandlogo;
+  background-image: url("../images/02-hero-bg.jpg");
+}
+
+#headline {
+  background-color: rgba(255,255,255,0.8);
+  border-bottom: 5px solid #ff3c0041;
+  border-top: 5px solid #ff3c0041;
+  border-left: 5px solid #ff3c0041;
+  border-right: 5px solid #ff3c0041;
+  position: sticky;
+  left: 800px;
+  top: 100px;
+  padding: 25px;
+  max-width: 700px;
+  z-index: 100;
+}
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+  border-bottom: 50px solid #ff3c0041;
+  border-top: 50px solid #ff3c0041;
+}
+
+/* Category Grid CSS */
+
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 200px;
+  margin: 50px auto;
+}
+
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "ledwall calculator calculator"
+  "pastelpuzzle pastelpuzzle surfreport"
+  "runbuddy runbuddy runbuddy"
+  ;
+}
+
+#ledwall {
+  grid-area: ledwall;
+  background-image: url("../images/02-portfolio-1.jpg");
+
+}
+#calculator {
+  grid-area: calculator;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#pastelpuzzle {
+  grid-area: pastelpuzzle;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#surfreport {
+  grid-area: surfreport;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#runbuddy {
+  grid-area: runbuddy;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #ff0040e3;
+}
+
+
+
+/* Typography CSS */
+
+h1 {
+  font-size: 60px;
+  margin: 0px 0px;
+  color: #ac4291;
+}
+
+h2 {
+  font-style: arial;
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px 0px;
+}
+
+
+
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #636364;
+}
